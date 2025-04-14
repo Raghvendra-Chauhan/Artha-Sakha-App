@@ -53,6 +53,6 @@ git clone https://github.com/Raghvendra-Chauhan/Artha-Sakha-App.git
 Feel free to fork the project and submit pull requests for improvements, features, or bug fixes. Please ensure any new code includes tests, and update the README if necessary.
 
 ## License
-This project is licensed under the MIT License - see the ```LICENSE``` file for details.
+This project is licensed under the MIT License - see the ```#LICENSE``` file for details.
 
 
