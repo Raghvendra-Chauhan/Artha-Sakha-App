@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Artha Sakha</string>
+    <string-array name="expense_categories">
+        <item>Food</item>
+        <item>Travel</item>
+        <item>Shopping</item>
+        <item>Entertainment</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

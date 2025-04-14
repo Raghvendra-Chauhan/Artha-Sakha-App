@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Calendar View Style -->
+    <style name="CustomCalendarStyle">
+        <!-- Background Color of the Calendar -->
+        <item name="android:background">@drawable/calendar_background</item>
+        <!-- Use custom date selector for pressed and focused states -->
+        <item name="android:dayOfWeekTextAppearance">@style/CalendarTextAppearance</item> <!-- Add custom style for day of week -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Customize the text size -->
+        <item name="android:textSize">16sp</item>
+        <!-- Add some padding inside calendar days -->
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <!-- Custom style for month and year text -->
+    <style name="CalendarMonthYearStyle">
+        <item name="android:textColor">@color/primary</item> <!-- Change the text color for Month and Year -->
+        <item name="android:textSize">18sp</item> <!-- Set the size for month and year -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomFilterDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <!-- Background with rounded corners -->
+        <item name="android:background">@drawable/custom_dialog_background</item>
+
+        <!-- Text color for dialog -->
+        <item name="android:textColorPrimary">#000000</item>
+
+        <!-- Dialog width adjustments -->
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+
+        <!-- Elevation for subtle shadow effect -->
+        <item name="android:elevation">8dp</item>
+
+        <!-- Padding for better spacing -->
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="CalendarTextAppearance">
+        <item name="android:textColor">@color/black</item> <!-- Text color for days -->
+        <item name="android:textSize">14sp</item> <!-- Text size for days -->
+        <item name="android:textStyle">bold</item> <!-- Make the text bold -->
+    </style>
+
+
+</resources>

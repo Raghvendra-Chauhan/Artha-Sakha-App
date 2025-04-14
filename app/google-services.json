@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "191918349285",
+    "project_id": "artha-sakha-53aa5",
+    "storage_bucket": "artha-sakha-53aa5.firebasestorage.app",
+    "firebase_url": "https://artha-sakha-53aa5-default-rtdb.firebaseio.com/"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191918349285:android:5ae06242fa2df3c8b52d0c",
+        "android_client_info": {
+          "package_name": "com.example.arthasakha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYuRH6BKNmdtwbhEWr3Wysb8FX1wg8ono"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

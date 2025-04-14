@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter Expenses"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp" />
+
+    <!-- Category Filter -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvCategoryFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:text="Select Category"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:drawableEnd="@android:drawable/ic_menu_more" />
+
+
+    <!-- Date Filter -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date Range"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp" />
+
+    <RadioGroup
+        android:id="@+id/rgDateFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbLast7Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 7 Days"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rbLast30Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 30 Days"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rbCustomDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Date Range"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <!-- Amount Filter -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by Amount"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp" />
+
+    <RadioGroup
+        android:id="@+id/rgAmountFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbAbove1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Above ₹1000"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rbBelow1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Below ₹1000"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnClearFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:textColor="@color/black"
+            android:background="@drawable/button_bg"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:background="@drawable/button_bg"
+            android:padding="8dp"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/btnApplyFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:textColor="@color/black"
+            android:background="@drawable/button_bg"
+            android:padding="8dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+</LinearLayout>

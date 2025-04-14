@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Required Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ArthaSakha"
+        tools:targetApi="34">
+
+        <!-- Greeting Page (First Screen) -->
+        <activity
+            android:name=".GreetingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ArthaSakha">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Page -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ArthaSakha"/>
+
+        <!-- Registration Page -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ArthaSakha"/>
+
+        <!-- Main Activity (Dashboard/Home Page) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.ArthaSakha"/>
+
+        <!-- Expense Management -->
+        <activity
+            android:name=".AddExpenseActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ArthaSakha"/>
+
+        <!-- Admin Dashboard -->
+        <activity
+            android:name=".AdminActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ArthaSakha"/>
+
+
+        <activity android:name=".ManageUsersActivity"/>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".QRScannerActivity" />
+        <activity android:name=".AllExpensesActivity" />
+        <activity android:name=".EditExpenseActivity" />
+
+
+
+
+
+    </application>
+</manifest>
