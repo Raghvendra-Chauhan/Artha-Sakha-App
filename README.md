@@ -33,3 +33,25 @@ To get started, clone the repository:
 
 ```bash
 git clone https://github.com/Raghvendra-Chauhan/Artha-Sakha-App.git
+
+## Install dependencies
+- Open the project in Android Studio and wait for the dependencies to be installed automatically.
+
+## Running the App
+- Open Artha-Sakha project in Android Studio.
+- Connect an Android device or start an emulator.
+- Run the project by clicking the Run button in Android Studio.
+
+## Usage
+- Greeting Page: On first launch, users will see a greeting page.
+- Login/Registration: Users can either log in or skip directly to the main page.
+- Main Page: The main page allows users to add expenses, view charts, and access payment options.
+- Admin Panel: Admins can view and manage app settings.
+
+## Contributing
+Feel free to fork the project and submit pull requests for improvements, features, or bug fixes. Please ensure any new code includes tests, and update the README if necessary.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
